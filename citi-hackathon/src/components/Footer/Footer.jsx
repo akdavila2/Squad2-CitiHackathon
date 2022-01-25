@@ -6,15 +6,13 @@ import accesibilidad from "../../assets/Access-white.png";
 import voz from "../../assets/Voice.png";
 import tamañoLetra from "../../assets/Font.png";
 
-
 const Footer = ({ setOpen }) => {
-  
   function mediumMode() {
-    if (document.body.className === 'medium-mode') {
-      document.body.className = ''
-      return
+    if (document.body.className === "medium-mode") {
+      document.body.className = "";
+      return;
     } else {
-      document.body.className = 'medium-mode'
+      document.body.className = "medium-mode";
     }
   }
 
@@ -27,13 +25,11 @@ const Footer = ({ setOpen }) => {
     setOpen(true);
   }
   return (
-
-    
     <footer>
-
       <div
         className="icon-footer-access"
-        alt="icono para acceder a menu de accesibilidad" onClick={openSidebar}
+        alt="icono para acceder a menu de accesibilidad"
+        onClick={openSidebar}
       />
       <div
         className="icon-footer-voice"
@@ -44,7 +40,8 @@ const Footer = ({ setOpen }) => {
       <div
         className="icon-footer-font"
         alt="icono para aumentar el tamaño de letra"
-        id="font-down" onClick={mediumMode}
+        id="font-down"
+        onClick={mediumMode}
       />
     </footer>
   );

@@ -26,7 +26,7 @@ const AltaBeneficiario = ({ addBeneficiary, fontSize }) => {
 
 
   const handleTransferencia = () => {
-    navigate("/");
+    navigate("/Transferencias");
   };
 
   return (

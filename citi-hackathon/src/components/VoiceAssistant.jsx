@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
 //import { createSpeechlySpeechRecognition } from '@speechly/speech-recognition-polyfill';
 import SpeechRecognition, {
   useSpeechRecognition,
@@ -14,7 +14,7 @@ import Sidebar from "./Footer/Sidebar";
 
 const VoiceAssistant = () => {
   const [open, setOpen] = useState(false);
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   const handleRegresar = () => {
     navigate("/");
   };
@@ -70,18 +70,22 @@ const VoiceAssistant = () => {
             INICIAR
           </button>
           <button
-            className="boton-confirmar"
+            className="boton-confirmar" name="boton de parar la grabacion"
             onClick={SpeechRecognition.stopListening}
-          >DETENER</button>
-          <button className="boton-confirmar" onClick={resetTranscript}>
+          >
+            DETENER
+          </button>
+          <button className="boton-confirmar" name="boton de  reiniciar la grabacion" onClick={resetTranscript}>
             REINICIAR
           </button>
         </section>
         <p>{transcript}</p>
-        <button className="boton-regresar" onClick={handleRegresar}>REGRESAR</button>
+        <button className="boton-regresar" name="boton de regresar a inicio" onClick={handleRegresar}>
+          REGRESAR
+        </button>
       </div>
-      <Footer setOpen={setOpen}/>
-      <Sidebar open={open} setOpen={setOpen}/>
+      <Footer setOpen={setOpen} />
+      <Sidebar open={open} setOpen={setOpen} />
     </>
   );
 };

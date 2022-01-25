@@ -36,6 +36,7 @@ background-size: cover;
   justify-content: space-evenly;
   background-image: url($assetPathVoice);
   background-size: cover;
+  cursor: pointer;
   } 
 
 .icon-footer-font{
@@ -46,6 +47,7 @@ background-size: cover;
     justify-content: space-evenly;
     background-image: url($assetPathFont);
     background-size: cover;
+    cursor: pointer;
   } 
 
   body.dark footer{
