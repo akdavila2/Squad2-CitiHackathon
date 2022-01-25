@@ -28,7 +28,7 @@ const App = () => {
   // let url = `${process.env.REACT_APP_JSON_SERVER_USERS}?id=${user}`
 
   let url = `https://citibanamex-hackathon.herokuapp.com/User?id=${user}`
-  let url_benfeiciarios = `https://citibanamex-hackathon.herokuapp.com/beneficiarios?=id_usuario=${user}`
+  let url_benfeiciarios = `https://citibanamex-hackathon.herokuapp.com/beneficiarios?id_usuario=${user}`
 
 
   let api = helpHttp();
